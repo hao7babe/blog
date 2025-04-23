@@ -27,6 +27,16 @@ search: true
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+
+# 网站的根目录（重要！！！）
+baseurl: "/blog"
+
+# 你的网站地址
+url: "https://haoqi.github.io"
+
+# 构建目录
+destination: ./_site
+
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -48,14 +58,13 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
+# 关闭本地插件加载（GitHub Pages 不支持自定义 plugin）
+plugins: []
+
+# 如果有 jemoji、jekyll-feed 等插件也要注释掉
+# plugins:
+#   - jekyll-feed
+#   - jekyll-seo-tag
 
 author:
   name   : "First Lastname"
